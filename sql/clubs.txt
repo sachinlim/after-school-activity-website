@@ -1,0 +1,17 @@
+CREATE TABLE IF NOT EXISTS clubs (
+    id INT(4) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    club_name varchar(25) not null,
+    supervisor1 varchar(25) not null,
+    supervisor2 varchar(25) not null,
+    max_students int(4) not null,
+    day varchar (8) not null,
+    description varchar (250) not null
+);
+
+
+INSERT INTO clubs (club_name, supervisor1, supervisor2, max_students, day, description)
+VALUES ("Athletics", "Owen Hart", "Wayne Long", 40, "Wednesday", "Athletics training with a variety of activities to choose from. We have field and track events you can train and be a part of.");
+
+
+INSERT INTO clubs (club_name, supervisor1, supervisor2, max_students, day, description)
+VALUES ("Football", "Mike Wilson", "Tim Cook", 25, "Wednesday", "Come join in for a 30-45 minute training session where you get to learn new skills! We will end the day with a few matches against each other."), ("Badminton", "Scott Prosser", "Holly Stuart", 20, "Wednesday", "You will be training for the first half of the session and will be able to play a few games against your peers. We will end the session with a fun game that involves all of us!"), ("Chess", "Matt Todd", "Owen Brown", 15, "Tuesday", "Come play chess with your friends and the supervisors and learn new skills!"), ("Maths Tuition", "Fiona Orton", "Sam Thin", 25, "Thursday", "Extra help for those students who need more work done for maths!"), ("Chemistry Tuition", "Hannah Marsh", "Holly Owen", 25, "Monday", "Extra help for those students who need more work done for chemistry!"), ("Basketball", "Dan Carter", "Steve Young", 25, "Thursday", "Basketball training and matches amongst your peers."), ("Athletics", "Owen Hart", "Wayne Long", 40, "Wednesday", "Athletics training with a variety of activities to choose from. We have field and track events you can train and be a part of.");
