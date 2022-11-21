@@ -3,10 +3,8 @@ include_once "dbh-conn.php";
 session_start();
 $userID = $_SESSION['userID']; // user ID must exist in the users table for this to work 
 
-
 // Selection of clubs and saving it to the database
 if (isset($_POST["club"])){
-
 
     $sql_del = "DELETE FROM student_club_choices WHERE userID = '$userID';";
 

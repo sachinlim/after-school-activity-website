@@ -43,17 +43,14 @@
                 $result = mysqli_query($conn, $sql);
                 $checkResults = mysqli_num_rows($result);
                 
-
                 if ($checkResults > 0){
                     while ($row = mysqli_fetch_assoc($result)){
                         echo "<div class='current_clubs'>";
                         echo "<b>" . $row['club_name'] . " (" . $row["club_day"] . ") </b>";
-        
                     }
                 } else {
                     echo "<div class='current_clubs'>";
                     echo "<b> None </b>";
-                    
                 }
             ?>
 
@@ -70,7 +67,6 @@
 
                 if ($checkResults > 0){
                     while ($row = mysqli_fetch_assoc($result)){
-
                         echo "<form method='POST' id='form' action='student-selections-check.php'>";
                         // echo "<form method='POST' id='form' action='./passives/update_clubs.php'>";
                         echo "<div class='boxes'>";
@@ -96,7 +92,6 @@
 
                     echo "</form>"; // close form outside of the while loop so that the form doesn't close before all clubs have been listed
                 } 
-                
             ?>
 
             </div> <!-- close clubs -->
@@ -107,6 +102,5 @@
             ?>
 
     </div> <!-- close container -->
-
 </body>
 </html>

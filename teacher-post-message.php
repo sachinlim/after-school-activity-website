@@ -6,10 +6,7 @@
     if ($_SESSION["typeID"] === 1){
         header('Location: student.php');
     }
-
-
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -22,12 +19,10 @@
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <title>Post Messages</title>
 </head>
-
 <body>
     <?php
     include_once "header.php";
     ?>
-
 
     <div id=container>
         <div id=background> 
@@ -58,9 +53,7 @@
 
                 <button type="submit" name="submit" id="submit" style='width:60px;height:30px;'>Submit</button><br>
             </form>
-
             </div>
-
 
             <div id="all-users-R">
                 <h2>Below are all the Clubs and Activities</h2>
@@ -80,7 +73,6 @@
                         </thead>
 
                     <?php
-
                         $userID = $_SESSION["userID"];
                             $sql = "SELECT users.userID, (AES_DECRYPT(users.fName, 'ae5tEpd42LoeH5a')), (AES_DECRYPT(users.sName, 'ae5tEpd42LoeH5a')), clubs_list.club_name, messages.messageID, messages.msg_date, messages.msg_time, messages.msg
                             FROM messages
@@ -108,17 +100,8 @@
 
                     </table>
                 </div>
-
-
-
-
-
             </div>
-
         </div>
-
-    
     </div>
-
 </body>
 </html>

@@ -54,7 +54,6 @@
                 echo "<li><a href='passives/logout.php'>Log IN</a></li>";
                 header('Location: index.php');
         }
-            
     ?>
 
 </nav>

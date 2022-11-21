@@ -87,9 +87,7 @@
                                         "</td><td>".$row['email'].
                                         "</td><td><a href='passives/delete_users_func.php?id=$row[userID]'>Delete".
                                      "</td></tr>";
-
                             }
-
                     ?>
                     
                     </table>

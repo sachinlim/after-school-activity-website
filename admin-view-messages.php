@@ -69,7 +69,6 @@
                                         "</td><td>".$row['msg'].
                                         "</td><td><a href='passives/admin_delete_message_func.php?id=$row[messageID]'>Delete".
                                      "</td></tr>";
-
                             }
                     ?>
 

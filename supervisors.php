@@ -12,7 +12,6 @@
     
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -77,9 +76,7 @@
                         <p><br>Click <b><a href="create-clubs.php"> here </a></b> to create new Clubs and Activities.</p>
 
                 </section>
-
             </div>
-
 
             <div id="all-users-R">
                 <h2>Below are all Clubs and the Supervisors</h2>
@@ -128,20 +125,9 @@
                     ?>
 
                     </table>
-
-                    
                 </div>
-
-
-
-
-
             </div>
-
         </div>
-
-    
     </div>
-
 </body>
 </html>

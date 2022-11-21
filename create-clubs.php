@@ -55,16 +55,14 @@
                             <textarea name="description" id="description" rows="4" cols="27" placeholder="Coaching session..."></textarea> <br>
                             
                             <button type="submit" name="submit" id="submit" style='width:60px;height:30px;'>Submit</button><br>
-
                         </form>
-
                         <p><br>Click <b><a href="supervisors.php"> here </a></b> to allocate a supervisor for the clubs</p>
                 </section>
             </div>
 
             <div id="all-users-R">
                 <h2>Below are all the Clubs and Activities</h2>
-
+                
                 <div id=table-data>
                     <table>
                         <thead>
@@ -94,16 +92,13 @@
                                         "</td><td>".
                                         "</td><td><a href='passives/delete_club_func.php?id=$row[clubID]'>Delete".
                                      "</td></tr>";
-
                             }
-
                     ?>
-
+                    
                     </table>
                 </div>
             </div>
         </div>
     </div>
-
 </body>
 </html>

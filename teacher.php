@@ -6,8 +6,6 @@
     if ($_SESSION["typeID"] === 1){
         header('Location: student.php');
     }
-
-
 ?>
 
 <!DOCTYPE html>
@@ -67,13 +65,10 @@
 
             ?>
 
-            
         </div>
         <button onclick="generatePDF()">Create PDF</button>
 
         <div id=regtable>
-
-            
             <div id=table-data>
                 <table id="student-table">
                     <thead>
@@ -106,10 +101,7 @@
 
                 </table>
             </div>
-
         </div>
-
-
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -162,7 +154,5 @@
         doc.save(club_name+'.pdf')
     }
     </script>
-
 </body>
-
 </html>

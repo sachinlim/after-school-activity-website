@@ -6,7 +6,6 @@
     if ($_SESSION["typeID"] === 2){
         header('Location: teacher.php');
     }
-
 ?>
 
 <!DOCTYPE html>
