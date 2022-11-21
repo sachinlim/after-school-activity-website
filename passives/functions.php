@@ -21,7 +21,6 @@ function createUser($conn, $fname, $sname, $doB, $email, $pwd, $utype) {
     header("location: ../admin.php?signup=success");
 
     exit();
-
 }
 
 function deleteUser($conn, $userID){
@@ -36,7 +35,6 @@ function deleteUser($conn, $userID){
     $stmt4 = mysqli_query($conn, $sql4);
 
     header("location: ../admin.php?deletion=success");
-
 }
 
 function createClub($conn, $club_name, $location, $club_day, $startTime, $endTime, $description){
@@ -54,7 +52,6 @@ function createClub($conn, $club_name, $location, $club_day, $startTime, $endTim
     mysqli_stmt_close($stmt);
 
     header("location: ../create-clubs.php?club-creation=success");
-    
 }
 
 function deleteClub($conn, $clubID){
@@ -65,7 +62,6 @@ function deleteClub($conn, $clubID){
     $stmt2 = mysqli_query($conn, $sql2);
 
     header("location: ../create-clubs.php?club-deletion=success");
-
 }
 
 function createSupervisor($conn, $clubID, $userID){
@@ -73,7 +69,6 @@ function createSupervisor($conn, $clubID, $userID){
     $stmt = mysqli_query($conn, $sql);
 
     header("location: ../supervisors.php?supervisor-creation=success");
- 
 }
 
 function deleteSupervisor($conn, $supervisorID){
@@ -81,7 +76,6 @@ function deleteSupervisor($conn, $supervisorID){
     $stmt = mysqli_query($conn, $sql);
 
     header("location: ../supervisors.php?supervisor-deletion=success");
- 
 }
 
 function emailExists($conn, $email) {
@@ -107,7 +101,6 @@ function emailExists($conn, $email) {
         $result = false;
         return $result;
     }
-
 }
 
 function loginUser($conn, $email, $pwd){
@@ -138,7 +131,6 @@ function loginUser($conn, $email, $pwd){
                 header("location: ../student.php");
                 break;
             case 2:
-
                 $userID_for_supervision = $_SESSION["userID"];
 
                 $sql = "SELECT * FROM club_supervisors WHERE userID = '$userID_for_supervision';";
@@ -162,14 +154,10 @@ function loginUser($conn, $email, $pwd){
                 $result = mysqli_query($conn, $sql);
         
                 break;
-
         }
         
         exit();
-        
     }
-
-
 }
 
 function postMessage($conn, $msg_date, $msg_time, $message, $userID, $clubID) {
@@ -186,7 +174,6 @@ function postMessage($conn, $msg_date, $msg_time, $message, $userID, $clubID) {
     mysqli_stmt_close($stmt);
 
     header("location: ../teacher-post-message.php?club-creation=success");
-
 }
 
 function adminDeleteMessage($conn, $messageID){
@@ -194,7 +181,6 @@ function adminDeleteMessage($conn, $messageID){
     $stmt = mysqli_query($conn, $sql);
 
     header("location: ../admin-view-messages.php?message-deletion=success");
- 
 }
 
 function teacherDeleteMessage($conn, $messageID){
@@ -202,7 +188,6 @@ function teacherDeleteMessage($conn, $messageID){
     $stmt = mysqli_query($conn, $sql);
 
     header("location: ../teacher-post-message.php?message-deletion=success");
- 
 }
 
 function createStudentSelection($conn, $clubID, $userID){
@@ -210,7 +195,6 @@ function createStudentSelection($conn, $clubID, $userID){
     $stmt = mysqli_query($conn, $sql);
 
     header("location: ../student-selections.php?selection-creation=success");
-
 }
 
 function deleteStudentSelection($conn, $userID, $clubID){
@@ -218,5 +202,4 @@ function deleteStudentSelection($conn, $userID, $clubID){
     $stmt = mysqli_query($conn, $sql);
 
     header("location: ../student-selections.php?selection-deletion=success");
- 
 }
