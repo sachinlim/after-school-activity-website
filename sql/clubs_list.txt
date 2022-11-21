@@ -1,0 +1,33 @@
+CREATE TABLE clubs_list (
+clubID int AUTO_INCREMENT,
+club_name varchar(30) NOT NULL,
+club_location varchar(100) NOT NULL,
+club_day varchar(9) NOT NULL,
+startTime varchar(25) NOT NULL,
+endTime varchar(25) NOT NULL,
+club_description varchar(250),
+PRIMARY KEY (club_ID)
+);
+
+INSERT INTO clubs_list (club_Name, location, club_day, startTime, endTime, weekly_cost, maxStudent_guess) VALUES ("Football", "Sports Field", "Wednesday", "15:45:00", "17:00:00", "2.50", 40)
+;
+
+INSERT INTO clubs_list (club_Name, location, club_day, startTime, endTime, weekly_cost, maxStudent_guess) 
+VALUES ("Hockey", "Astro Turf", "Wednesday", "15:45:00", "17:00:00", "0.00", 40), 
+("Tennis", "Tennis Court", "Tuesday", "15:45:00", "17:00:00", "0.00", 15),
+("Table Tennis", "Sports Hall", "Monday", "15:45:00", "17:00:00", "0.00", 20),
+("Swimming", "Canterbury Leisure World", "Thursday", "16:00:00", "17:30:00", "1.25", 20)
+;
+
+
+## Final Version ##
+CREATE TABLE clubs_list (
+clubID int AUTO_INCREMENT,
+club_name varchar(30) NOT NULL,
+club_location varchar(100) NOT NULL,
+club_day varchar(9) NOT NULL,
+startTime varchar(25) NOT NULL,
+endTime varchar(25) NOT NULL,
+club_description varchar(250),
+PRIMARY KEY (club_ID)
+);

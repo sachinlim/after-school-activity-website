@@ -1,0 +1,64 @@
+## userTypes ##
+CREATE TABLE user_types(
+typeID int AUTO_INCREMENT,
+user_type varchar(25),
+PRIMARY KEY (typeID)
+);
+
+## users##
+CREATE TABLE users (
+userID int AUTO_INCREMENT,
+fName varbinary(255) NOT NULL,
+sName varbinary(255) NOT NULL,
+doB varbinary(255) NOT NULL,
+email varbinary(255),
+pwd varchar (255),
+typeID int,
+PRIMARY KEY (userID),
+FOREIGN KEY (typeID) REFERENCES user_types(typeID)
+);
+
+## Clubs List ##
+CREATE TABLE clubs_list (
+clubID int AUTO_INCREMENT,
+club_name varchar(30) NOT NULL,
+club_location varchar(100) NOT NULL,
+club_day varchar(9) NOT NULL,
+startTime varchar(25) NOT NULL,
+endTime varchar(25) NOT NULL,
+club_description varchar(250),
+PRIMARY KEY (club_ID)
+);
+
+## Student Club Choices ##
+CREATE TABLE student_club_choices(
+choiceID int AUTO_INCREMENT,
+userID int NOT NULL,
+clubID int NOT NULL,
+PRIMARY KEY (choiceID),
+FOREIGN KEY (userID) REFERENCES users(userID),
+FOREIGN KEY (clubID) REFERENCES clubs_list(clubID)
+);
+
+## Club Supervisors ##
+CREATE TABLE club_supervisors (
+supervisorID int AUTO_INCREMENT,
+clubID int NOT NULL,
+userID int NOT NULL,
+PRIMARY KEY (supervisorID),
+FOREIGN KEY (clubID) REFERENCES clubs_list(clubID),
+FOREIGN KEY (userID) REFERENCES users(userID)
+);
+
+## Messages ##
+CREATE TABLE messages(
+messageID int AUTO_INCREMENT,
+msg_date varchar(30) NOT NULL,
+msg_time varchar(30) NOT NULL,
+msg text,
+userID int NOT NULL,
+clubID int NOT NULL,
+PRIMARY KEY (messageID),
+FOREIGN KEY (userID) REFERENCES users(userID),
+FOREIGN KEY (clubID) REFERENCES clubs_list(clubID)
+);
