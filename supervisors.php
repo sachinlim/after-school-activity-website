@@ -68,8 +68,8 @@
 
                             </select>
                             <br>
-                            
-                            <button type="submit" name="submit" id="submit" style='width:60px;height:30px;'>Submit</button><br>
+                            <button type="submit" name="submit" id="submit" style='width:60px;height:30px;'>Submit</button>
+                            <br>
 
                         </form>
 
@@ -97,31 +97,30 @@
                         </thead>
 
                     <?php
-                            $sql = "SELECT clubs_list.clubID, clubs_list.club_name, club_supervisors.supervisorID, club_supervisors.userID, users.fName, users.sName
-                            FROM clubs_list
-                            LEFT JOIN club_supervisors 
-                            ON clubs_list.clubID = club_supervisors.clubID
-                            LEFT JOIN users
-                            ON users.userID = club_supervisors.userID
-                            ORDER BY clubs_list.clubID";
+                        $sql = "SELECT clubs_list.clubID, clubs_list.club_name, club_supervisors.supervisorID, club_supervisors.userID, users.fName, users.sName
+                        FROM clubs_list
+                        LEFT JOIN club_supervisors 
+                        ON clubs_list.clubID = club_supervisors.clubID
+                        LEFT JOIN users
+                        ON users.userID = club_supervisors.userID
+                        ORDER BY clubs_list.clubID";
 
-                            $result = mysqli_query($conn, $sql);
+                        $result = mysqli_query($conn, $sql);
 
-                            while ($row = mysqli_fetch_assoc($result)){
-                                echo "<tr>
-                                <td>".$row['clubID']. "</td><td>".$row['club_name'];
+                        while ($row = mysqli_fetch_assoc($result)){
+                            echo "<tr>
+                            <td>".$row['clubID']. "</td><td>".$row['club_name'];
 
-                                if (strlen($row['userID'] > 1)) {
-                                    echo "</td><td>".$row['userID'] . "</td><td>".$row['fName'] . " " . $row['sName']. 
-                                    "</td><td><a href='passives/delete_supervisor_func.php?id=$row[supervisorID]'>Delete";
+                            if (strlen($row['userID'] > 1)) {
+                                echo "</td><td>".$row['userID'] . "</td><td>".$row['fName'] . " " . $row['sName']. 
+                                "</td><td><a href='passives/delete_supervisor_func.php?id=$row[supervisorID]'>Delete";
 
-                                } else{
-                                    echo "</td><td> - </td><td> - </td><td> -";
-                                }
-
-                                echo "</td></tr>";
+                            } else{
+                                echo "</td><td> - </td><td> - </td><td> -";
                             }
 
+                            echo "</td></tr>";
+                        }
                     ?>
 
                     </table>

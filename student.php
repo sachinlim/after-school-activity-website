@@ -53,11 +53,8 @@
                             
                         }
                     }
-
                     ?>
 
-
-                    
                     <?php
                     // Information feed being posted by Admin or Teachers
 
@@ -92,8 +89,6 @@
                         echo "<br> No messages to deliver... <br>";
                         
                     }
-
-
                     ?>
 
                 </div>
@@ -130,9 +125,6 @@
                                 echo "<div class='requirements'>" . "<b>Requirements: </b>" . "None" . "</div>";
 
                                 echo "</div>";
-
-
-
                             }
                         } else {
                             echo "<div class='boxes'>";
@@ -150,13 +142,6 @@
             </div>
         </div>
         </div>
-
-    </div>
-
-
-
-
-    
-    
+    </div> 
 </body>
 </html>
