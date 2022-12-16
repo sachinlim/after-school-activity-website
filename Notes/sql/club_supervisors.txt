@@ -1,0 +1,30 @@
+CREATE TABLE club_supervisors (
+supervisorID int AUTO_INCREMENT,
+clubID int NOT NULL,
+userID int NOT NULL,
+PRIMARY KEY (supervisorID),
+FOREIGN KEY (clubID) REFERENCES clubs_list(clubID),
+FOREIGN KEY (userID) REFERENCES users(userID)
+);
+
+INSERT INTO club_supervisors(clubID, userID) VALUES (1, 6)
+
+
+SELECT clubs_list.clubID, clubs_list.club_name, club_supervisors.supervisorID, club_supervisors.userID, users.fName, users.sName
+FROM clubs_list
+LEFT JOIN club_supervisors 
+ON clubs_list.clubID = club_supervisors.clubID
+LEFT JOIN users
+ON users.userID = club_supervisors.userID
+ORDER BY clubs_list.clubID
+
+
+## Final Version ##
+CREATE TABLE club_supervisors (
+supervisorID int AUTO_INCREMENT,
+clubID int NOT NULL,
+userID int NOT NULL,
+PRIMARY KEY (supervisorID),
+FOREIGN KEY (clubID) REFERENCES clubs_list(clubID),
+FOREIGN KEY (userID) REFERENCES users(userID)
+);
