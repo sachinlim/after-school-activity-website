@@ -14,7 +14,7 @@ The website will contain a list of clubs and activities that are available for s
 As this project was initially hosted on GitLab, the original commit history is not available. This repository contains the files associated with the project.
 
 
-### Project Aims
+## Project Aims
 
 - Make it an online system that could be deployed on the cloud
 - Allow accounts to exist with security in mind
