@@ -17,7 +17,7 @@ As this project was initially hosted on GitLab, the original commit history is n
 
 - Make it an entirely online system
 - Allow accounts to exist with security in mind
-- Have an administrator account(s) to manage system
+- Have an administrator account(s) to manage this system
 - Enable mobile phone and tablet Access
 - Enforce encryption to the data being stored
 - Generate PDF printouts for teachers for their activities
