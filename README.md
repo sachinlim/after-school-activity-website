@@ -16,7 +16,7 @@ As this project was initially hosted on GitLab, the original commit history is n
 
 ### Project Aims
 
-- Make it an entirely online system
+- Make it an online system that could be deployed on the cloud
 - Allow accounts to exist with security in mind
 - Have an administrator account(s) to manage this system
 - Enable mobile phone and tablet access
