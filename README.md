@@ -18,13 +18,13 @@ As this project was initially hosted on GitLab, the original commit history is n
 - Make it an entirely online system
 - Allow accounts to exist with security in mind
 - Have an administrator account(s) to manage this system
-- Enable mobile phone and tablet Access
+- Enable mobile phone and tablet access
 - Enforce encryption to the data being stored
 - Generate PDF printouts for teachers for their activities
 
 ## Key Features
 
-There are a lot of features that would make this section quite long. Therefore, most of the features will be described in the [Notes](Notes) directory. 
+The [Notes](Notes) directory will provide additional information that is involved with this project.
 
 ### Creation of Users and Activities 
 
