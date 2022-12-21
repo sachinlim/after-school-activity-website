@@ -34,7 +34,7 @@ The [Notes](Notes) directory will provide additional information that is involve
 Users can always be added onto the database, but it can only be done by the Admin. The Admin is the person who is in charge of the website, and therefore, it would make sense to only allow them to be able to do this part and not others like teachers. When the Admin logs in, the “users” table gets decrypted, allowing them to make changes, and all of the users in the database are shown in the homepage. To add a user onto the database and into the “users” table, the Admin will need just a few details about the user.
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/80691974/208688636-c560bd7f-b274-45bf-bc73-b84b99483277.JPG"/>
+  <img src="https://user-images.githubusercontent.com/80691974/208976131-02ded6ae-b0e2-4a5a-ae67-7738203f186b.png" width="900"/>
 </p>
 
 There is a “form” which contains input boxes that takes in 6 details: first name, surname, email, date of birth, password, and the user type. The input boxes for first name and surname all have auto-capitalisation tool in place to capitalise the first letter of each word. All of the details will get pushed onto the “users” table by doing an `UPDATE` query, but the password will get hashed before being sent over. The query is also a prepared statement to make sure there are no events of SQL injection happening.
@@ -45,7 +45,7 @@ There is a “form” which contains input boxes that takes in 6 details: first 
 Creation of Clubs and Activities works in the same fashion as creating a new user. A table that contains all of the Clubs and Activities in the database gets shown to the Admin and they are able to add and remove them in the same manner as users.
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/80691974/208688954-ebb806ff-ab21-463f-8663-b9502a7a1d08.JPG"/>
+  <img src="https://user-images.githubusercontent.com/80691974/208976311-76fbb4d4-2a71-4d00-a8ce-0b73fdedc354.png" width="775"/>
 </p>
 
 Clubs can be created with the form on the left and can be deleted with the Delete button on the table. Clicking the link under the Submit button or the link in the navigation bar takes the Admin to see all of the current supervisors/Teachers.
@@ -56,8 +56,9 @@ Clubs can be created with the form on the left and can be deleted with the Delet
 The logging in system is the part of the website that differentiates each user to be able to correctly allocate students to the right activities. When the user wants to gain access to the website, it may be done via a link from the school’s website or an email link that was sent out to all students. 
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/80691974/208686454-5c89e263-f0af-4117-993f-74bc37c7afad.JPG"/>
+  <img src="https://user-images.githubusercontent.com/80691974/208976541-c9de99e9-ea11-4188-a6cc-d4ff6d4d334f.png" width="850"/>
 </p>
+
 
 All users will be seeing the same log-in webpage and will have the same requirements to log in: email and password. 
 
@@ -65,19 +66,19 @@ All users will be seeing the same log-in webpage and will have the same requirem
 #### Validation
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/80691974/208702600-d99f7ac9-6fc6-4130-bd81-c6f60ceffd56.JPG"/>
+  <img src="https://user-images.githubusercontent.com/80691974/208976720-6824b640-bef4-4e50-b613-2048c61deef1.png" width="375"/>
 </p>
 
 Error messages are properly given out, as shown above, when the wrong email address is entered.
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/80691974/208702558-fe41d7fd-b0df-450d-81d3-f6b24271c8ab.JPG"/>
+  <img src="https://user-images.githubusercontent.com/80691974/208976893-ec3bb18b-4501-4c1f-bd82-25b7b0580d43.png" width="375"/>
 </p>
 
 When the wrong password is entered, the response, above, is shown.
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/80691974/208687006-adcf7a60-a0c0-4e99-a55d-c4eb7fb11825.JPG"/>
+  <img src="https://user-images.githubusercontent.com/80691974/208977047-c965ec96-55ba-4c55-aede-fb9cf3fc907f.png" width="800"/>
 </p>
 
 If the student is logging in for the first time or they do not have any Clubs selected, they are displayed a message that informs them that they have no Club or Activity selected.
@@ -88,7 +89,7 @@ If the student is logging in for the first time or they do not have any Clubs se
 Once the students have logged in, after clicking the right links, the students are able to view and select Clubs that they would like to do. 
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/80691974/208691207-934692f1-d86c-43a4-b8e8-01661cc0c312.JPG"/>
+  <img src="https://user-images.githubusercontent.com/80691974/208977206-1250f756-db32-48aa-9756-5c46bbeae207.png" width="800"/>
 </p>
 
 They are able to use this webpage to select clubs and submit them. Once it has been submitted, it will get added onto the database and will be able to be viewed from the website itself.
@@ -96,13 +97,13 @@ They are able to use this webpage to select clubs and submit them. Once it has b
 #### Validation
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/80691974/208691896-11e3056a-0c70-4550-be54-fe0251ad1030.JPG"/>
+  <img src="https://user-images.githubusercontent.com/80691974/208977396-9b3b0b14-345a-47b1-815e-ab7cec5dc681.png" width="500"/>
 </p>
 
 If the student was to have clashes in their club choices, they will be shown a different screen like the message above, where the application will tell them to choose again. There is also a check to see if students have actually selected something or not.
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/80691974/208687228-912a7946-1afd-4f6c-9906-752513152653.JPG"/>
+  <img src="https://user-images.githubusercontent.com/80691974/208977791-46daf932-bd5d-4a9b-942d-9fd694096a23.png" width="800"/>
 </p>
 
 If there are no clashes, the student will be redirected to their home screen and their choices will be displayed.
@@ -116,7 +117,7 @@ To start a session, the function `session_start()` is called and is declared rig
 allow us to be able to properly handle user accounts with a login system that limits access for unwanted guest but still allow us to have multiple users logged in at the same time.
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/80691974/208690579-f8da4a4c-026e-465f-a1b5-455df1c41ff8.JPG"/>
+  <img src="https://user-images.githubusercontent.com/80691974/208977985-6251a227-99f1-4afe-b62e-7fc00c7dea4a.png" width="700"/>
 </p>
 
 There are two different users logged in above (mobile view) who have their own separate Club choices. When going ahead and selecting the Clubs to update them, I can click both "Submit" buttons as fast as I can and still have both of them being saved onto the database.
@@ -138,7 +139,7 @@ AES Encryption is implemented for the “users” table and only for that table 
 However, when the Admin logs in, the “users” table will get decrypted to allow the Admin full control over the database from the website. As soon as the Admin logs out, the “users” table is encrypted again. It has been done this way to limit the amount of encryption and decryption processes taking place because when there are a large number of Users stored in the database, it could lead to performance slowdowns. Also, when the Admin is logged in, no one else is able to log into the website because the login system will try to decrypt an already decrypted email address – meaning there will be no match between the two theoretically matching emails addresses.
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/80691974/208692635-9596aa64-11bd-4286-b13f-764326242efa.JPG"/>
+  <img src="https://user-images.githubusercontent.com/80691974/208978311-e4698949-4bd0-44a4-a6ac-22dbdc370b17.png" width="750"/>
 </p>
 
 The values for each of the columns in the screenshot (via phpMyAdmin) above are being stored as a `varbinary(255)`, allowing us to see some of the values in the encrypted form and providing enough length to allow for it all to fit. Information about Clubs and their descriptions have not been encrypted because it will be public knowledge. The main importance of this project was to encrypt the “users” table and hide information about them being viewed if someone was to gain access to the database.
@@ -147,7 +148,7 @@ The values for each of the columns in the screenshot (via phpMyAdmin) above are 
 ### Hashing
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/80691974/208693240-7ea09f0d-499a-4cb8-839d-c86cfa6a7351.JPG"/>
+  <img src="https://user-images.githubusercontent.com/80691974/208978456-658c4eb4-2dcd-4632-9b16-0bcb2f230ab2.png" width="750"/>
 </p>
 
 The other half of the table contains the emails, which are still AES encrypted and stored as `varbinary(255)`, but the password is not being stored in the same format. The password has been hashed and the column values are stored as `varchar(255)` and there is no way to get the original string for the password, which is what we want to negate the chance of passwords being cracked.
@@ -156,7 +157,7 @@ The other half of the table contains the emails, which are still AES encrypted a
 ### Management of Supervisors
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/80691974/208695286-ff2532d0-9ff6-46be-8911-64cc6df11392.JPG"/>
+  <img src="https://user-images.githubusercontent.com/80691974/208978655-1eef8e64-ee03-4840-9145-f26db9177350.png" width="300"/>
 </p>
 
 We can see a table in which we can see the Club and also see which user is supervising the club. The Delete button will delete only the supervisor that has been allocated for the Club – they are not deleted from the “users” table.
@@ -164,11 +165,11 @@ We can see a table in which we can see the Club and also see which user is super
 To add a supervisor for a club, there are two drop-down menus next to the table. For mobile devices, it is above the table, but for desktops, it is to the left.
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/80691974/208695293-58715b0e-228c-4e80-9a3c-8195745521b1.JPG"/>
+  <img src="https://user-images.githubusercontent.com/80691974/208978822-2feb3074-62a6-4564-a8f0-30ac79de6e83.png" width="300"/>
 </p>
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/80691974/208695787-41c856d7-f041-4cbc-a1ef-648684aee605.JPG"/>
+  <img src="https://user-images.githubusercontent.com/80691974/208978921-40e75e27-65a9-46bc-a28e-3c3e71fc20de.png" width="300"/>
 </p>
 
 The Admin can simply select Clubs and users from the respective tables, and it will allocate the teachers to the Clubs once the "Submit" button has been pressed. The allocation can then be seen on the table. The supervisor will now be able to access, on their homepage, a table that contains all of the students who have signed up to their Club that they are supervising.
@@ -179,7 +180,7 @@ The Admin can simply select Clubs and users from the respective tables, and it w
 Once the accounts for students have been created, it is possible for them to select Clubs. However, the Admin needs a way to manage all of the selections.
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/80691974/208697955-e7a04903-945a-476a-b533-75b52a55692c.JPG"/>
+  <img src="https://user-images.githubusercontent.com/80691974/208979035-145f310c-e4bd-4132-a0c4-fc16ab0cfd8f.png" width="800"/>
 </p>
 
 This is what the Admin will see to manage all of the students and their Club selections, and this is done by using `LEFT JOIN` SQL queries. It will display each of the students once if they have no Clubs selected but there is no limit to how many times they can appear on this list – although they will be limited to five because there are five days of school per week.
@@ -187,7 +188,7 @@ This is what the Admin will see to manage all of the students and their Club sel
 By using the drop down menus on the left-hand side, the Admin can select values that are linked to the database. 
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/80691974/208699022-f9d19190-0b09-4331-9ae3-9fe58fd59136.JPG"/>
+  <img src="https://user-images.githubusercontent.com/80691974/208979123-6ee43d74-c542-4a5b-bb45-d65f37acfd18.png" width="550"/>
 </p>
 
 Once the Admin presses the "Submit" button, the student is allocated a Club on the table, as seen in the table above. Additional Club allocations will show another row with the same student because they now have two Clubs they are signed up for. 
@@ -198,19 +199,19 @@ Once the Admin presses the "Submit" button, the student is allocated a Club on t
 A PDF document can be generated. It is possible to right click and print out a table that looks decent but that is extra clicks and requires extra effort. A simple button to generate a PDF document exists, and it makes use of jsPDF library and the jsPDF-AutoTable plugin.
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/80691974/208699953-f4066d10-a237-4d42-a3c1-a760471be354.JPG"/>
+  <img src="https://user-images.githubusercontent.com/80691974/208979335-370886dd-4981-4728-bbe6-82286ecae1eb.png" width="700"/>
 </p>
 
 When a teacher logs in, they will all see a webpage similar to this. It will contain the Club they are supervising an also a table that contains all of the students who have selected that Club. 
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/80691974/208699963-c69c7832-2f8a-414d-9401-310b4ba104ca.JPG"/>
+  <img src="https://user-images.githubusercontent.com/80691974/208979619-2cccc9c4-6bfe-4962-b16e-03db12831e6b.png" width="300"/>
 </p>
 
 From here, the supervisor simply presses the "Create PDF" button and a PDF file is generated and downloaded. A download prompt may appear depending on the browser configurations, or it will automatically download like in the screenshot above.
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/80691974/208699965-ffb01a4e-2513-42a8-8263-21206d27c6b1.JPG"/>
+  <img src="https://user-images.githubusercontent.com/80691974/208979782-0a144aa1-25c9-4756-a55d-2ae9e2ce4dc9.png" width="700"/>
 </p>
 
 The PDF file can be opened and will look like the one above. The values above the table will change depending on the Club.
@@ -221,19 +222,19 @@ The PDF file can be opened and will look like the one above. The values above th
 Another feature the supervisors and teachers have access is the ability to post messages for students to see. These students will need to have the Club that the teacher is supervising. The supervisor will have to navigate to the webpage to access the feature. 
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/80691974/208701168-4bb2864d-9e12-4489-a2b8-7ebc53fd06bb.JPG"/>
+  <img src="https://user-images.githubusercontent.com/80691974/208979903-2da88e89-ea2e-46e9-9c93-e46dc69c175c.png" width="800"/>
 </p>
 
 The teachers can simply enter a message and it will be shown on the table on the right.
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/80691974/208701593-0da3eecc-bb0b-4735-b0eb-6f1b3850fe65.JPG"/>
+  <img src="https://user-images.githubusercontent.com/80691974/208980027-a5c2fdfc-e3c6-42d8-ad24-41958d2cfa65.png" width="700"/>
 </p>
 
 Now that messages have been posted by the supervisor, the students are able to see it on their homepages. The homepage with messages can be seen in the screenshot above. The supervisor is still able to delete the messages whenever they want by pressing the Delete button.
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/80691974/208701646-b2518320-935a-4349-b744-031eaf910ca5.JPG"/>
+  <img src="https://user-images.githubusercontent.com/80691974/208980272-245e694b-f1ab-41eb-ae7a-847e0a12b734.png" width="700"/>
 </p>
 
 The Admin can, of course, view and monitor these messages when needed.
