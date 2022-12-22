@@ -6,6 +6,8 @@ The project started off with a few weeks of planning which gave me an idea of th
 
 As each week went by, every time I would sit and work on the project, it made me better at understanding principles of PHP and SQL, both of which are now valuable to me. The important features were added early on and demonstrated to my supervisor to show how much progress I had made.
 
+![image](https://user-images.githubusercontent.com/80691974/209130219-0c1468e6-81bc-4147-84da-dd9ef8ec2942.png)
+
 
 After sitting down and thinking of both Jira and GitLab, the tool that was the most valuable to me was Jira due to the nature of it allowing me to set small goals to achieve. I have about 80 tasks, and 16 tasks made by my supervisor in our weekly meetings. 
 
