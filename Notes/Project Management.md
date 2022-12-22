@@ -15,4 +15,4 @@ The 3 years attending uni have allowed me to understand the benefits of Jira and
 
 ## GitLab
 
-GitLab was being used as a code repository and mostly contained code from the end of term. Unfortunately, I no longer have access to GitLab account as it was provided by my university, and no longer have the original commit history.
+GitLab was being used as a code repository. Unfortunately, I no longer have access to GitLab account as it was provided by my university, and no longer have the original commit history.
