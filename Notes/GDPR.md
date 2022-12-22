@@ -1,0 +1,9 @@
+# GDPR
+
+Information is being stored on the website and this information can be quite sensitive. The General Data Protection Regulation (GDPR) came into effect on 25 May 2018 and affects all organisations that are looking to store information about others. After the UK left the EU, the data protection regime is still part of the Data Protection Act 2018.
+
+There are now stricter rules to be followed with how information is being handled, such as permission requiring to be granted to store information about users. Data breaches must also be reported to the Information Commissioner’s Office (ICO) within 72 hours. In the eyes of the ICO, any information about an individual, regardless of if it is private or public, is still considered to be personal information, and thus, fall under these regulations. The individual’s name, location and emails are all examples of information that need to be handled properly.
+
+With schools incorporating a large community of students from different parts of the world, it may be apparent that there are different definitions on what information is personal, private, or how it should be handled. The school will need to make it clear how the information is being handled and look into getting a Data Protection Officer (DPO) who will manage information while following the data protection laws. The DPO can be a separate individual who previously was not part of the school or someone who is trusted and well knowledgeable in this field.
+
+In order to give the parents and all entities an idea of what is happening with the information, they should all be told on how the information is being handled, how long it will be stored for and who it will be shared with. A school may only choose to have information held on the database until the student leaves the school or may keep it for 6 months after the end of the academic year.
